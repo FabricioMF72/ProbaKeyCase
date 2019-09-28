@@ -5,7 +5,6 @@ public class Muestra {
 	String[] muestraActual;
 	ConjuntoCombinaciones conjuntoTotal= ConjuntoCombinaciones.getConjuntoCombinaciones();
 	int porcientoMuestra=4;
-	
 	public String[] getMuestra() {
 		int tamanoMuestra=conjuntoTotal.getConjunto().length/porcientoMuestra;
 		muestraActual=new String[tamanoMuestra];

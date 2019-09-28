@@ -86,9 +86,11 @@ public class ConjuntoCombinaciones {
 		int tamanoConjunto= conjunto.length;
 		for(indexConjuntoTotal=0;indexConjuntoTotal<tamanoConjunto;indexConjuntoTotal++) {
 			int indexElementosAEliminar;
-			for(indexElementosAEliminar=0;indexElementosAEliminar<tamanoConjunto;indexElementosAEliminar++) {
+			int tamanoelementosAEliminar= elementosAEliminar.length;
+			for(indexElementosAEliminar=0;indexElementosAEliminar<tamanoelementosAEliminar;indexElementosAEliminar++) {
 				if(conjunto[indexConjuntoTotal]==elementosAEliminar[indexElementosAEliminar]) {
 					conjunto=removeTheElement(conjunto,indexConjuntoTotal);
+					tamanoConjunto=tamanoConjunto-1;
 				}
 			}
 		}
