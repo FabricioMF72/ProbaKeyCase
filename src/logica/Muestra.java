@@ -9,10 +9,10 @@ public class Muestra {
 	public String[] getMuestra() {
 		int tamanoMuestra=conjuntoTotal.getConjunto().length/porcientoMuestra;
 		muestraActual=new String[tamanoMuestra];
+		conjuntoTotal.shuffle();
 		for(int index=0;index<tamanoMuestra;index++) {
 			muestraActual[index]=conjuntoTotal.getConjunto()[index];
 		}
-		conjuntoTotal.shuffle();
 		return muestraActual;	
 	}
 
