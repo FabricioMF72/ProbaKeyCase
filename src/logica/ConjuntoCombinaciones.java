@@ -21,9 +21,6 @@ public class ConjuntoCombinaciones {
             	posActual++;
             }
         }
-        for(int i=0;i<260;i++) {
-        	System.out.println(conjunto[i]);
-        }
 	}
 	public static ConjuntoCombinaciones getConjuntoCombinaciones() {
 		if(conjuntoCombinaciones==null) {
@@ -50,6 +47,7 @@ public class ConjuntoCombinaciones {
 		    conjunto[randomPosition] = temp;
 		}
 	}
+<<<<<<< Updated upstream
 	public static String[] removeTheElement(String[] arr, int index) { 
 	
 		// If the array is empty 
@@ -92,5 +90,10 @@ public class ConjuntoCombinaciones {
 				}
 			}
 		}
+=======
+	
+	public String[] muestra() {
+		return conjunto;
+>>>>>>> Stashed changes
 	}
 }
