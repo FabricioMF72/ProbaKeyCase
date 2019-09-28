@@ -1,8 +1,12 @@
 package main;
+import logica.AlgoritmoDeAprendizaje;
 import logica.ConjuntoCombinaciones;
 import logica.Muestra;
 public class Main {
 	public static void main(String[] args) {
-		ConjuntoCombinaciones c= ConjuntoCombinaciones.getConjuntoCombinaciones();
+		
+		
+		AlgoritmoDeAprendizaje j = new AlgoritmoDeAprendizaje();
+		j.IniciarPruebas();
 	}
 }
