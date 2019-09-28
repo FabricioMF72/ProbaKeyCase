@@ -50,9 +50,47 @@ public class ConjuntoCombinaciones {
 		    conjunto[randomPosition] = temp;
 		}
 	}
-	public String[] muestra() {
+	public static String[] removeTheElement(String[] arr, int index) { 
+	
+		// If the array is empty 
+		// or the index is not in array range 
+		// return the original array 
+		if (arr == null || index < 0 || index >= arr.length) { 
 		
-		return conjunto;
+			return arr; 
+		} 
 		
+		// Create another array of size one less 
+		String[] nuevoArray = new String[arr.length - 1]; 
+		
+		// Copy the elements except the index 
+		// from original array to the other array 
+		for (int i = 0, k = 0; i < arr.length; i++) { 
+			
+			// if the index is 
+			// the removal element index 
+			if (i == index) { 
+				continue; 
+			} 
+		
+			// if the index is not 
+			// the removal element index 
+			nuevoArray[k++] = arr[i]; 
+		} 
+		
+		// return the resultant array 
+		return nuevoArray; 
+}
+	public void eliminarEliminarElementosDelConjunto(String[] elementosAEliminar)  {
+		int indexConjuntoTotal;
+		int tamanoConjunto= conjunto.length;
+		for(indexConjuntoTotal=0;indexConjuntoTotal<tamanoConjunto;indexConjuntoTotal++) {
+			int indexElementosAEliminar;
+			for(indexElementosAEliminar=0;indexElementosAEliminar<tamanoConjunto;indexElementosAEliminar++) {
+				if(conjunto[indexConjuntoTotal]==elementosAEliminar[indexElementosAEliminar]) {
+					conjunto=removeTheElement(conjunto,indexConjuntoTotal);
+				}
+			}
+		}
 	}
 }
