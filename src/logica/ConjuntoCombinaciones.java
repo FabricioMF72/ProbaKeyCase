@@ -47,7 +47,6 @@ public class ConjuntoCombinaciones {
 		    conjunto[randomPosition] = temp;
 		}
 	}
-<<<<<<< Updated upstream
 	public static String[] removeTheElement(String[] arr, int index) { 
 	
 		// If the array is empty 
@@ -92,10 +91,9 @@ public class ConjuntoCombinaciones {
 				}
 			}
 		}
-=======
+	}
 	
 	public String[] muestra() {
 		return conjunto;
->>>>>>> Stashed changes
 	}
 }
